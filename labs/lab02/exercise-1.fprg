@@ -4,12 +4,31 @@
         <attribute name="name" value="exercise-1"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-01 10:52:03 AM"/>
+        <attribute name="saved" value="2026-07-01 11:36:37 AM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMDo1MToxOCBBTTsyNzM0"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMDo1MjowMyBBTTsxOzI4Mzc="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMTozNjozNyBBTTsyOzI4NDg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="Ringgit" type="Real" array="False" size=""/>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <declare name="commission" type="Real" array="False" size=""/>
+            <declare name="ExchangeRM" type="Real" array="False" size=""/>
+            <declare name="Baht" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter amount of Ringgit: &quot;" newline="True"/>
+            <input variable="Ringgit"/>
+            <output expression="&quot;Enter exchange rate: &quot;" newline="True"/>
+            <input variable="rate"/>
+            <assign variable="Commission" expression="Ringgit*0.02"/>
+            <assign variable="ExchangeRM" expression="Ringgit - Commission"/>
+            <assign variable="Baht" expression="ExchangeRM*Rate"/>
+            <output expression="&quot;Commission = RM&quot;" newline="True"/>
+            <output expression="Commission" newline="True"/>
+            <output expression="&quot;Amount exchanged = RM&quot;" newline="True"/>
+            <output expression="ExchangeRM" newline="True"/>
+            <output expression="&quot;Thai Baht received =Baht&quot;" newline="True"/>
+            <output expression="Baht" newline="True"/>
+        </body>
     </function>
 </flowgorithm>
