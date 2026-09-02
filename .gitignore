@@ -64,3 +64,6 @@ Desktop.ini
 # Claude Code files
 CLAUDE.md
 .claude*
+
+# My private notes
+labs/lab07/test.txt
